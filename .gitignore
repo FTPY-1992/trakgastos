@@ -1,0 +1,83 @@
+# Gradle
+.gradle
+**/build/
+!gradle/wrapper/gradle-wrapper.jar   # Mantener el wrapper si lo usás
+
+# Local configuration
+local.properties
+*.local.properties
+
+# Android Studio / IntelliJ
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Android Studio caches y configuraciones específicas
+.idea/caches/
+.idea/libraries/
+.idea/modules.xml
+.idea/workspace.xml
+.idea/gradle.xml
+.idea/assetWizardSettings.xml
+.idea/deploymentTargetDropDown.xml
+.idea/navEditor.xml
+.idea/usage.statistics.xml
+.idea/vcs.xml
+.idea/shelf/
+
+# Captures y screenshots de emulador/device
+captures/
+**/screenshots/
+**/emulator-snapshots/
+
+# APK / AAB / bundles generados
+*.apk
+*.ap_
+*.dex
+*.aab
+release/
+debug/
+
+# Archivos generados por ProGuard / R8
+*-proguard.txt
+*-mapping.txt
+*-seeds.txt
+*-usage.txt
+
+# Archivos de keystore (¡nunca commitear!)
+*.jks
+*.keystore
+*.keystore.*
+keystore.properties
+
+# Logs y temporales
+*.log
+*.tmp
+*.bak
+*.swp
+*~.nib
+.DS_Store
+Thumbs.db
+
+# Archivos de entorno / secrets (agregá si usás Firebase, etc.)
+google-services.json   # ← si usás Firebase, a veces se ignora, pero si no tenés secrets mejor commitealo vacío
+*.properties.secret
+.env
+
+# Kotlin / Gradle extras
+.kotlin/
+**/.kotlin/
+
+# Navegación y Compose previews temporales (opcional, pero común)
+**/compose-previews/
+**/navigation-screenshots/
+
+# Si usás Room con schemas exportados (muy recomendado)
+**/schemas/   # ← Ignorar si no querés commitear los schemas de Room (pero muchos los commitean para CI/CD)
+
+# Opcional: si usás Hilt o Dagger con generated code
+**/dagger/
+**/hilt/
+
+# Fin -
